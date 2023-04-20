@@ -1,0 +1,754 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    overflow-x: hidden !important;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Josefin Sans';
+}
+
+
+#hd-bg{
+    background-color: #000000;
+
+    width: 100%;
+    height: 10vh;
+}
+
+header{
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#logo{
+    font-size: 30px;
+    font-weight: 200;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+nav ul{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+nav ul li{
+    list-style: none;
+}
+
+nav ul li a{
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 200;
+    font-size: 20px;
+}
+
+nav ul li a:hover{
+    font-weight: 300;
+}
+
+
+
+#sub-title{
+    width: 100%;
+    height: 70vh;
+
+    background-image: url(wallpaper.jpg);
+    background-size: cover;
+    background-position: bottom;
+    background-attachment: fixed;
+}
+
+#sub{
+    text-align: center;
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    gap: 35px;
+}
+
+#sub h2{
+    color: #ffffff;
+    font-size: 50px;
+    font-weight: 400;
+}
+
+#sub p{
+    color: #ffffff;
+    font-size: 25px;
+    font-weight: 300;
+}
+
+
+
+#dv-1{
+    width: 100%;
+    height: 40vh;
+
+    display: flex;
+}
+
+#dv-1 > div{
+    width: 50%;
+}
+
+#dv-1-pic{
+    background-image: url(pic1.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+#dv-1-txt{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    gap: 48px;
+}
+
+#dv-1-txt div h3{
+    font-size: 25px;
+    font-weight: 500;
+
+    margin-bottom: 25px;
+}
+
+#dv-1-txt div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+#dv-1-txt p{
+    width: 70%;
+    font-size: 15px;
+}
+
+
+#dv-2{
+    background-color: #3b3b3b;
+    color: #ffffff;
+
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+
+    padding: 40px 140px;
+    text-align: center;
+}
+
+#dv-2 div{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+#dv-2 h2{
+    font-size: 50px;
+    font-weight: 400;
+}
+
+#dv-2 h4{
+    font-weight: 300;
+    font-size: 20px;
+}
+
+#dv-2 p{
+    font-weight: 200;
+    font-size: 18px;
+}
+
+#card-sec{
+    
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+
+    padding: 50px 0px;
+}
+
+#card-sec h5{
+    color: #000000;
+    font-size: 50px;
+    font-weight: 300;
+}
+
+#card-cont-1{
+    display: flex;
+    gap: 40px;
+}
+
+#card-cont-2{
+    display: flex;
+    gap: 40px;
+}
+
+.card{
+    background-color: #ffffff;
+    border: 5px #a07d61 solid;
+    border-radius: 25px;
+
+    text-align: center;
+
+    width: 240px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+    padding: 30px;
+}
+
+.card h3{
+    font-weight: 400;
+    font-size: 30px;
+    color: #252525;
+}
+
+.card span{
+    padding: 15px;
+
+    border-radius: 10px;
+
+    background-color: #a07d61;
+
+    transition: 0.3s;
+}
+
+.card span a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.card span:hover{
+    transition: 0.3s;
+
+    background-color: #be9471;
+}
+
+
+#equipe{
+    width: 100%;
+    height: 40vh;
+
+    background-color: #c2b8b0;
+
+    color: #252525;
+
+    text-align: center;
+
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 45px;
+}
+
+#equipe h2{
+    font-size: 45px;
+    font-weight: 300;
+}
+
+#names{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+#names p{
+    font-size: 18px;
+}
+
+
+#contato{
+    width: 100%;
+    height: 75vh;
+
+    background-image: url(contact.jpg);
+    background-size: cover;
+    background-position: center;
+
+    color: #ffffff;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#contato-1{
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+#contato-1 p{
+    font-size: 20px;
+    font-weight: 200;
+}
+
+#contato-parag{
+    font-size: 18px;
+    font-weight: 200;
+}
+
+#contato-1 h2{
+    font-size: 35px;
+    font-weight: 300;
+}
+
+#contato-1 a{
+    font-size: 15px;
+    font-weight: 300;
+    text-align: center;
+    padding: 16px;
+    background-color: #00ce00;
+    width: 60%;
+    text-decoration: none;
+    color: #ffffff;
+    transition: 0.3s;
+}
+
+#contato-1 a:hover{
+    background-color: #00a300;
+    transition: 0.3s;
+}
+
+form{
+    color: #252525;
+    padding: 25px;
+
+    background-color: #ffffff;
+
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+form p{
+    font-size: 20px;
+    font-weight: 400;
+}
+
+form input{
+    outline: 0;
+
+    padding: 10px;
+    font-size: 16px;
+
+    border: black 1px solid;
+
+    font-family: 'Josefin Sans';
+
+    width: 100%;
+    height: 40px;
+
+    background-color: #ffffff77;
+}
+
+#msg{
+    padding: 10px;
+    font-size: 16px;
+
+    border: black 1px solid;
+
+    font-family: 'Josefin Sans';
+
+    width: 100%;
+    height: 135px;
+
+    background-color: #ffffff77;
+}
+
+button{
+    padding: 20px;
+    background-color: #a07d61;
+    font-family: 'Josefin Sans';
+    font-size: 18px;
+    outline: 0;
+    border: none;
+    color: #252525;
+    transition: 0.3s;
+}
+
+button:hover{
+    background-color: #be9471;
+    transition: 0.3s;
+}
+
+footer{
+    background-color: #000000;
+    padding: 10px;
+    color: #ffffff;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+
+@media (max-width: 850px){
+    header{
+        width: 100%;
+        height: 100%;
+    
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    #hd-bg{
+        width: 100%;
+        height: 20vh;
+    }
+}
+
+@media (max-width: 450px){
+    header{
+        width: 100%;
+        height: 100%;
+    
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    #hd-bg{
+        width: 100%;
+        height: 20vh;
+    }
+
+    nav ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+
+    #sub p{
+        color: #ffffff;
+        font-size: 20px;
+        font-weight: 300;
+    }
+
+    #card-sec h5{
+        color: #000000;
+        font-size: 40px !important;
+        font-weight: 900;
+    }
+}
+
+
+@media (max-width: 650px){
+    #sub-title{
+        width: 100%;
+        height: 80vh;
+    
+        background-image: url(wallpaper_mobile.jpg);
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+    }
+}
+
+@media (max-width: 1160px){
+    #dv-1{
+        width: 100%;
+        height: 100vh;
+    
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    #dv-1 > div{
+        width: 100%;
+        height: 50%;
+    }
+    
+    #dv-1-pic{
+        background-image: url(pic1.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+    
+    #dv-1-txt{
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        gap: 48px;
+    }
+    
+    #dv-1-txt div h3{
+        font-size: 25px;
+        font-weight: 500;
+    
+        margin-bottom: 25px;
+    }
+    
+    #dv-1-txt div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+
+    #card-sec{
+        width: 100%;
+    
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+
+        text-align: center;
+        padding: 50px 0px;
+    }
+    
+    #card-sec h5{
+        color: #000000;
+        font-size: 50px;
+        font-weight: 300;
+    }
+    
+    #card-cont-1{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap-reverse;
+        gap: 40px;
+    }
+    
+    #card-cont-2{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 40px;
+    }
+    
+    .card{
+        background-color: #ffffff;
+        border: 5px #a07d61 solid;
+        border-radius: 25px;
+    
+        text-align: center;
+    
+        width: 240px;
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    
+        padding: 30px;
+    }
+    
+    .card h3{
+        font-weight: 400;
+        font-size: 30px;
+        color: #252525;
+    }
+    
+    .card span{
+        padding: 15px;
+    
+        border-radius: 10px;
+    
+        background-color: #a07d61;
+    
+        transition: 0.3s;
+    }
+    
+    .card span a{
+        text-decoration: none;
+        color: #ffffff;
+    }
+    
+    .card span:hover{
+        transition: 0.3s;
+    
+        background-color: #be9471;
+    }
+}
+
+@media (max-width: 1000px){
+    #dv-2{
+        background-color: #3b3b3b;
+        color: #ffffff;
+    
+        width: 100%;
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 40px;
+    
+        padding: 40px;
+        text-align: center;
+    }
+}
+
+
+@media (max-width: 1195px){
+    #contato{
+        width: 100%;
+        height: 100%;
+    
+        background-image: url(contact.jpg);
+        background-size: cover;
+        background-position: center;
+    
+        color: #ffffff;
+    
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+        justify-content: space-around;
+        
+        padding: 40px 0px;
+    }
+    
+    #contato-1{
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+        gap: 35px;
+    }
+    
+    #contato-1 p{
+        font-size: 20px;
+        font-weight: 200;
+    }
+    
+    #contato-parag{
+        font-size: 18px;
+        font-weight: 200;
+    }
+    
+    #contato-1 h2{
+        font-size: 35px;
+        font-weight: 300;
+    }
+    
+    #contato-1 a{
+        font-size: 15px;
+        font-weight: 300;
+        text-align: center;
+        padding: 16px;
+        background-color: #00ce00;
+        width: 70%;
+        text-decoration: none;
+        color: #ffffff;
+        transition: 0.3s;
+    }
+    
+    #contato-1 a:hover{
+        background-color: #00a300;
+        transition: 0.3s;
+    }
+
+    form{
+        color: #252525;
+        padding: 25px;
+    
+        background-color: #ffffff;
+    
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    form p{
+        font-size: 20px;
+        font-weight: 400;
+    }
+    
+    form input{
+        outline: 0;
+    
+        padding: 10px;
+        font-size: 16px;
+    
+        border: black 1px solid;
+    
+        font-family: 'Josefin Sans';
+    
+        width: 100%;
+        height: 40px;
+    
+        background-color: #ffffff77;
+    }
+    
+    #msg{
+        padding: 10px;
+        font-size: 16px;
+    
+        border: black 1px solid;
+    
+        font-family: 'Josefin Sans';
+    
+        width: 100%;
+        height: 135px;
+    
+        background-color: #ffffff77;
+    }
+    
+    button{
+        padding: 20px;
+        background-color: #a07d61;
+        font-family: 'Josefin Sans';
+        font-size: 18px;
+        outline: 0;
+        border: none;
+        color: #252525;
+        transition: 0.3s;
+    }
+    
+    button:hover{
+        background-color: #be9471;
+        transition: 0.3s;
+    }
+}
